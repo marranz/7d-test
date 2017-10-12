@@ -2,6 +2,8 @@
 
 This project will deploy a vpc and the needed infrastructure for having a running wordpress configured
 
+There a version constraint configured into terraform to allow running only on a version equal or higher than 0.10.6, which is the version I used.
+
 It will consist on:
 
         * A VPC with two public and two private subnets and all the needed elements to make it work (routing tables, nat gateways, etc..)
