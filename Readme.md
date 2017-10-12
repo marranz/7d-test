@@ -22,8 +22,26 @@ These challenges i mentioned are not implemented on this exercise.
 
 How to deploy the solution:
 
+You will need user with admin o similar permissions on s3. Once you have that, you can create a pair of access/secret keys and put them on a file like this:
 
-Clone the repo
+```
+export AWS_DEFAULT_REGION=<region_name>
+export AWS_ACCESS_KEY_ID=<access_key>
+export AWS_SECRET_ACCESS_KEY=<secret_key>
+
+
+export TF_VAR_aws_secret_key=$AWS_SECRET_ACCESS_KEY
+export TF_VAR_aws_access_key=$AWS_ACCESS_KEY_ID
+export TF_VAR_region=$AWS_DEFAULT_REGION
+```
+
+Once the file is ready you can just load it using the source bash command:
+
+`source <file_name`
+
+This will create the needed environment variables for running the project and/or the aws cli with the proper permissions.
+
+After this, you can clone the repo and deploy the solution like this:
 
 ```
 git clone <repo_url>
