@@ -37,7 +37,7 @@ export TF_VAR_region=$AWS_DEFAULT_REGION
 
 Once the file is ready you can just load it using the source bash command:
 
-`source <file_name`
+`source <file_name>`
 
 This will create the needed environment variables for running the project and/or the aws cli with the proper permissions.
 
