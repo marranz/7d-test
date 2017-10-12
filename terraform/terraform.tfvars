@@ -11,4 +11,4 @@ db_instance_type = "db.t2.micro"
 db_name = "wordpress"
 db_password = "wordpress12345"
 db_username = "wordpress"
-desired_capacity = 0
+desired_capacity = 1

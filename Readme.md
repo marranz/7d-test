@@ -43,6 +43,14 @@ Once the file is ready you can just load it using the source bash command:
 
 This will create the needed environment variables for running the project and/or the aws cli with the proper permissions.
 
+You will need also a ssh public key stored on ~/.ssh/id_rsa.pub
+
+if you don't have one you can create it by typing on your linux machine:
+
+```
+ssh-keygen 
+```
+
 After this, you can clone the repo and deploy the solution like this:
 
 ```
