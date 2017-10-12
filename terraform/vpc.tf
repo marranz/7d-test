@@ -1,5 +1,5 @@
 module "vpc" {
-  source                          = "git::ssh://git@gitlab.com/marranz-terraform-modules/module-vpc.git"
+  source                          = "../modules/module-vpc/"
   vpc_region                      = "${var.region}"
   vpc_cidr_block                  = "${var.vpc_cidr_block}"
   vpc_project_name                = "${var.project_name}"

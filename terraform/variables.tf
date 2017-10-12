@@ -12,3 +12,4 @@ variable "db_instance_type" {}
 variable "db_name" {}
 variable "db_password" {}
 variable "db_username" {}
+variable "desired_capacity"{}

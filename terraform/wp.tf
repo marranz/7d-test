@@ -6,9 +6,9 @@ module "wp" {
   instance_type        = "${var.instance_type}"
   vpc_id               = "${module.vpc.vpc_id}"
   availability_zones   = ["${data.aws_availability_zones.available.names[0]}", "${data.aws_availability_zones.available.names[1]}"]
-  asg_max_size         = 1
+  asg_max_size         = 4
   asg_min_size         = 0
-  asg_desired_capacity = 1
+  asg_desired_capacity = "${var.desired_capacity}"
   db_instance_type     = "${var.db_instance_type}"
   db_name              = "${var.db_name}"
   db_password          = "${var.db_password}"
